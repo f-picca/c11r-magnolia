@@ -1,9 +1,10 @@
-# __lightDevModuleFolder__
+# __Commerce Data Model for Magnolia__
 
 <!--
 Provide a one sentence description of what your light module
 provides.
 -->
+Magnolia Light Module containing a Taxon based data model for commerce data
 
 
 ## Features
@@ -14,11 +15,22 @@ authors, or whoever the primary user is. For a component template,
 consider providing screenshots of the rendered component and the
 component dialog.
 -->
-
+provides a data model for:
+- catalogs
+- colors
+- countries
+- languages
+- organizations
+- products
+- regions
+- sizes
+- skus
+- taxonomies
+- taxons
 
 ## Usage
 
-<!--
+<!-- 
 Provide details about how a developer can make the component template,
 or other features provided by the light module, available to content
 authors.
@@ -31,6 +43,8 @@ Describe how a template can be configured with parameters if
 applicable.
 -->
 
+Clone the package into the light modules folder of your magnolia installation
+
 
 ## Information on Magnolia CMS
 
@@ -40,5 +54,7 @@ https://docs.magnolia-cms.com
 
 ## License
 
+Released "as is" and not meant to be run in production. No support provided by the author nor Commerce Layer
 
 ## Contributors
+Fabrizio Picca - Commerce Layer - @f-picca
