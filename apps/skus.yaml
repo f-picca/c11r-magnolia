@@ -1,0 +1,9 @@
+!content-type:skus
+name: skus
+label: SKUs
+icon: icon-tag-2
+
+# Optionally override any of the app configuration supplied by the content type.
+subApps:
+  detail:
+    label: SKU Details

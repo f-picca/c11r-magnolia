@@ -1,0 +1,28 @@
+$type: jcrDeliveryEndpoint_v2
+workspace: products
+depth: 10
+bypassWorkspaceAcls: true
+nodeTypes:
+  - mgnl:content
+
+references:
+  - name: assetReference
+    propertyName: image
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - 1920x1080
+        - 960x720
+        - 480x360
+  - name: skusReference
+    propertyName: skus
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: skus
+      expand: true
+  - name: colorsReference
+    propertyName: color
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: colors
+      expand: true

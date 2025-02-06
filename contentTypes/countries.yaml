@@ -1,0 +1,28 @@
+datasource:
+    workspace: countries
+    autoCreate: true
+
+model:
+  properties:
+    name:
+      type: String
+      required: true
+      label: Name
+    code:
+      type: String
+      required: true
+      label: ISO code
+    market:
+      type: String
+      required: false
+      label: Market
+    catalog:
+      type: reference:catalogs
+      label: Catalog
+    region: 
+      type: reference:regions
+      label: Region
+    languages:
+      type: reference:languages
+      label: Languages
+      multiple: true

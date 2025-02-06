@@ -1,0 +1,10 @@
+datasource:
+    workspace: regions
+    autoCreate: true
+
+model:
+  properties:
+    name: 
+      type: String
+      required: true
+      label: Name

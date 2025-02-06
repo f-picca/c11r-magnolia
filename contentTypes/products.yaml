@@ -1,0 +1,35 @@
+datasource:
+    workspace: products
+    autoCreate: true
+
+model:
+  properties:
+    name:
+      label: Name
+      required: true
+      type: String
+    code:
+      label: Code
+      required: true
+      type: String
+    baseProductId:
+      label: Base Product Id
+      required: true
+      type: String
+    description:
+      label: Description
+      required: false
+      type: String
+    image:
+      label: Image
+      required: false
+      type: asset
+    skus:
+      label: SKUs
+      required: false
+      type: reference:skus
+      multiple: true
+    color:
+      label: Color
+      required: false
+      type: reference:colors

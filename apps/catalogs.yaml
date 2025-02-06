@@ -1,0 +1,10 @@
+!content-type:catalogs
+name: catalogs
+label: Catalogs
+icon: icon-folder
+  
+
+# Optionally override any of the app configuration supplied by the content type.
+subApps:
+  detail:
+    label: Catalog Details

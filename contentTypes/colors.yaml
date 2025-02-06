@@ -1,0 +1,10 @@
+datasource:
+    workspace: colors
+    autoCreate: true
+
+model:
+  properties:
+    name:
+      type: String
+      required: true
+      label: Color

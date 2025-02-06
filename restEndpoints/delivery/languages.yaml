@@ -1,0 +1,15 @@
+$type: jcrDeliveryEndpoint_v2
+workspace: languages
+depth: 10
+bypassWorkspaceAcls: true
+nodeTypes:
+  - mgnl:content
+
+
+references:
+  - name: catalogsReference
+    propertyName: catalogs
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: catalogs
+      expand: true

@@ -1,0 +1,26 @@
+$type: jcrDeliveryEndpoint_v2
+workspace: countries
+depth: 5
+bypassWorkspaceAcls: true
+nodeTypes:
+  - mgnl:content
+
+references:
+  - name: catalogsReference
+    propertyName: catalog
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: catalogs
+      expand: true
+  - name: regionsReference
+    propertyName: region
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: regions
+      expand: true
+  - name: languagesReference
+    propertyName: language
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: languages
+      expand: true

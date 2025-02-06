@@ -1,0 +1,21 @@
+$type: jcrDeliveryEndpoint_v2
+workspace: taxons
+depth: 10
+bypassWorkspaceAcls: true
+nodeTypes:
+  - mgnl:content
+
+
+references:
+  - name: productsReference
+    propertyName: references
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: products
+      expand: true
+  - name: taxonsReference
+    propertyName: taxons
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: taxons
+      expand: true

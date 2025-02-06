@@ -1,0 +1,18 @@
+datasource:
+    workspace: languages
+    autoCreate: true
+
+model:
+  properties:
+    name:
+      type: String
+      required: true
+      label: Name
+    code: 
+      type: String
+      required: true
+      label: ISO code
+    catalog:
+      type: reference:catalogs
+      required: true
+      label: Catalog

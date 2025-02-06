@@ -1,0 +1,9 @@
+!content-type:products
+name: products
+label: Products
+icon: icon-content-item
+
+# Optionally override any of the app configuration supplied by the content type.
+subApps:
+  detail:
+    label: Product Details

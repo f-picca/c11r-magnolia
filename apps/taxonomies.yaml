@@ -1,0 +1,9 @@
+!content-type:taxonomies
+name: taxonomies
+label: Taxonomies
+icon: icon-sitemaps
+
+# Optionally override any of the app configuration supplied by the content type.
+subApps:
+  detail:
+    label: Taxonomy Details

@@ -1,0 +1,9 @@
+!content-type:taxons
+name: taxons
+label: Taxons
+icon: icon-has-variants
+
+# Optionally override any of the app configuration supplied by the content type.
+subApps:
+  detail:
+    label: Taxon Details

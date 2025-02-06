@@ -1,0 +1,25 @@
+$type: jcrDeliveryEndpoint_v2
+workspace: organizations
+depth: 10
+bypassWorkspaceAcls: true
+includeSystemProperties: true
+nodeTypes:
+  - mgnl:content
+
+references:
+  - name: assetReference
+    propertyName: favicon
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - 1920x1080
+        - 960x720
+        - 480x360
+  - name: assetReference
+    propertyName: logo
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - 1920x1080
+        - 960x720
+        - 480x360

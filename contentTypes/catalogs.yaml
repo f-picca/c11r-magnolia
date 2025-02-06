@@ -1,0 +1,19 @@
+datasource:
+    workspace: catalogs
+    autoCreate: true
+
+model:
+  properties:
+    id:
+      type: String
+      required: true
+      label: Id
+    name:
+      type: String
+      required: true
+      label: Name
+    taxonomies:
+      type: reference:taxonomies
+      multiple: true
+      required: true
+      label: Taxonomies

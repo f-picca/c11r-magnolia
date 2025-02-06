@@ -1,0 +1,9 @@
+!content-type:colors
+name: colors
+label: Colors
+icon: icon-edit-wo
+
+# Optionally override any of the app configuration supplied by the content type.
+subApps:
+  detail:
+    label: Colors

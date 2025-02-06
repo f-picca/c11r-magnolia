@@ -1,0 +1,22 @@
+datasource:
+    workspace: organizations
+    autoCreate: true
+
+model:
+  properties:
+    name:
+      type: String
+      required: true
+      label: Name
+    favicon:
+      type: asset
+      label: Favicon
+    logo:
+      type: asset
+      label: Logo
+    primaryColor:
+      type: reference:colors
+      label: Primary Color
+    manifest:
+      type: String
+      label: Manifest
